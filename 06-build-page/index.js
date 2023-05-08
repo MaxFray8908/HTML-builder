@@ -54,9 +54,7 @@ fs.readdir(`${path.join(__dirname, 'styles')}`, (err, files) => {
   })
 });
 
-fs.mkdir(`${path.join(pathCopyDirectory)}`, err => {
-  if(err) throw err;
-});
+fs.mkdir(`${path.join(pathCopyDirectory)}`, err => { });
 
 fs.readdir(pathDirectory, (err, files) => {
   
